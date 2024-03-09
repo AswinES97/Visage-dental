@@ -917,7 +917,7 @@ a[href*='tel'], a[href*='mailto'] {
 }
 
 .team-classic-figure .team-classic-soc-list a:hover {
-	color: #A42E68;
+	color: #333333;
 }
 
 .team-classic-caption {
@@ -2652,8 +2652,8 @@ hr {
 
 .button-gray-600, .button-gray-600:focus {
 	color: #ffffff;
-	background-color: #A42E68;
-	border-color: #A42E68;
+	background-color: #333333;
+	border-color: #333333;
 }
 
 .button-gray-600:hover, .button-gray-600:active {
@@ -2684,8 +2684,8 @@ hr {
 
 .button-primary, .button-primary:focus {
 	color: #ffffff;
-	background-color: #A42E68;
-	border-color: #A42E68;
+	background-color: #a42e68;
+	border-color: #a42e68;
 }
 
 .button-primary:hover, .button-primary:active {
@@ -3089,8 +3089,8 @@ hr {
 
 .btn-primary, .btn-primary:active, .btn-primary:focus {
 	color: #ffffff;
-	background: #A42E68;
-	border-color: #A42E68;
+	background: #a42e68;
+	border-color: #a42e68;
 }
 
 .btn-primary:hover {
@@ -3889,7 +3889,7 @@ textarea.form-input {
 .badge {
 	padding: 4px 10px;
 	border-radius: 3px;
-	background: #A42E68;
+	background: #333333;
 	text-transform: uppercase;
 	font-size: 13px;
 	line-height: 20px;
@@ -4694,7 +4694,7 @@ ul.blog-post-meta li .icon {
 .footer-classic {
 	padding: 90px 0;
 	font-weight: 400;
-	background: #A42E68;
+	background: #333333;
 }
 
 @media (min-width: 1200px) {
@@ -4773,7 +4773,7 @@ ul.blog-post-meta li .icon {
 
 .footer-modern {
 	position: relative;
-	background: #A42E68;
+	background: #333333;
 }
 
 .footer-modern > .container {
@@ -4857,7 +4857,7 @@ ul.blog-post-meta li .icon {
 .footer-minimal {
 	padding: 60px 0;
 	text-align: center;
-	background: #A42E68;
+	background: #333333;
 }
 
 .footer-minimal .icon-bg-white {
@@ -5633,7 +5633,7 @@ html [class*='section-'].section-bottom-0 {
 }
 
 .section-main-bunner.section-main-bunner-filter {
-	background: #A42E68;
+	background: #333333;
 }
 
 .section-main-bunner.section-main-bunner-filter .main-bunner-img {
@@ -6044,7 +6044,7 @@ html [class*='section-'].section-bottom-0 {
 * Dark Backgrounds
 */
 .bg-gray-600 {
-	background-color: #A42E68;
+	background-color: #333333;
 }
 
 .bg-gray-600:not([style*="background-"]) + .bg-gray-600:not([style*="background-"]) {
@@ -6241,7 +6241,7 @@ html [class*='section-'].section-bottom-0 {
 	left: 0;
 	width: 100vw;
 	height: 100vw;
-	background: #A42E68;
+	background: #333333;
 	transform: skewY(13deg);
 	z-index: 0;
 }
@@ -7019,7 +7019,7 @@ html.tablet .ui-to-top {
 }
 
 .rd-navbar-static .rd-nav-item.active .rd-nav-link {
-	color: #0d0a0a;
+	color: #a42e68;
 	background: transparent;
 }
 
@@ -8273,7 +8273,7 @@ html.rd-navbar-fixed-linked .page {
 }
 
 .rd-navbar-classic.rd-navbar-static.rd-navbar--is-stuck, .rd-navbar-classic.rd-navbar-static.rd-navbar--is-clone {
-	background: #A42E68;
+	background: #333333;
 	border-bottom-color: #444141;
 	box-shadow: 0px 0px 15px rgba(21, 21, 21, 0.35);
 }
@@ -8634,7 +8634,7 @@ html.rd-navbar-fixed-linked .page {
 	z-index: 1101;
 	width: 450px;
 	padding: 94px 0 0 0;
-	background: #A42E68;
+	background: #333333;
 	transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 	transform: translateX(100%);
 	box-shadow: 0 0 13px 0 rgba(21, 21, 21, 0.3);
@@ -9907,7 +9907,7 @@ html.rd-navbar-fixed-linked .page {
 
 .nav-tabs-modern {
 	flex-direction: column;
-	background: #A42E68;
+	background: #333333;
 	padding: 30px 25px;
 }
 
@@ -9989,13 +9989,13 @@ html.rd-navbar-fixed-linked .page {
 	top: 0;
 	width: 100%;
 	height: 40px;
-	background: #A42E68;
+	background: #333333;
 	transform: skewX(-35deg);
 }
 
 .nav-tabs-cteative {
 	padding: 10px 30px 30px;
-	background: #A42E68;
+	background: #333333;
 	flex-direction: column;
 	text-align: center;
 }
@@ -10079,7 +10079,7 @@ html.rd-navbar-fixed-linked .page {
 
 .nav-tabs-classic {
 	padding: 40px 30px;
-	background: #A42E68;
+	background: #333333;
 	flex-direction: column;
 	text-align: center;
 	border-radius: 10px 10px  0 0;
@@ -13081,7 +13081,7 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 	list-style: none;
 	margin: 0;
 	padding: 0;
-	background: #A42E68;
+	background: #333333;
 	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 }
 
@@ -13636,3 +13636,4 @@ html .dtp .hidden {
 html .dtp .invisible {
 	visibility: hidden;
 }
+
