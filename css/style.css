@@ -8247,14 +8247,14 @@ html.rd-navbar-fixed-linked .page {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 32px 0;
+	padding: 10px 0;
 }
 
 .rd-navbar-classic.rd-navbar-static .rd-navbar-brand img {
 	width: auto;
 	height: auto;
 	max-width: 200px;
-	max-height: 100px;
+	max-height: 120px;
 }
 
 .rd-navbar-classic.rd-navbar-static .rd-navbar-main-element {
@@ -8283,7 +8283,7 @@ html.rd-navbar-fixed-linked .page {
 }
 
 .rd-navbar-classic.rd-navbar-static.rd-navbar--is-stuck .rd-navbar-main, .rd-navbar-classic.rd-navbar-static.rd-navbar--is-clone .rd-navbar-main {
-	padding: 17px 0;
+	padding: 10px 0;
 }
 
 .rd-navbar-classic.rd-navbar-static.rd-navbar--is-stuck .rd-navbar-nav-item > .rd-navbar-submenu, .rd-navbar-classic.rd-navbar-static.rd-navbar--is-clone .rd-navbar-nav-item > .rd-navbar-submenu {
