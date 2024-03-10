@@ -13637,3 +13637,24 @@ html .dtp .invisible {
 	visibility: hidden;
 }
 
+.chat-box {
+	position: fixed;
+	bottom: 35px;
+	right: 20px;
+	width: 230px;
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	border-radius: 10px;
+	z-index: 9999;
+  }
+  
+  @media (max-width: 767.98px) {
+	.chat-box {
+	  width: 200px;
+	}
+  }
+
+.chat-header{
+	border-radius: 10px;
+}
+ 
