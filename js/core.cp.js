@@ -630,7 +630,7 @@
                     return (
                         (r = re.call(arguments, 2)),
                         (i = function () {
-                            return e.apply(t , r.concat(re.call(arguments)));
+                            return e.apply( this, r.concat(re.call(arguments)));
                         }),
                         (i.guid = e.guid = e.guid || he.guid++),
                         i
