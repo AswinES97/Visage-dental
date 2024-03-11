@@ -62,17 +62,17 @@ p {
 	margin: 0;
 }
 
-ul,
+/* ul,
 ol {
 	/* list-style: none; */
-	padding: 0;
-	margin: 15px;
-}
-
+	/* padding: 0;
+	margin: ; */
+/* } */ */
+/* 
 ul li,
 ol li {
-	/* display: block; */
-}
+	display: block;
+} */
 
 dl {
 	margin: 0;

@@ -75,32 +75,26 @@
             <div class="col-12">
               <div class="tabs-custom tabs-horizontal tabs-classic" id="tabs-1">
                 <ul class="nav nav-tabs nav-tabs-classic">
-                  <li class="nav-item" role="presentation"><a class="nav-link active" data-toggle="tab">Downloads</a></li>
+                  <li class="nav-item" role="presentation"><a class="nav-link active" data-toggle="tab">Request a Price list</a></li>
                 </ul>
                 <div class="tab-content">
                   <div class="tab-pane fade show active" id="tabs-1-1">
                     <div class="box-event-modern">
-                      <div class="event-item-modern py-5">
-                        <!-- <p class="event-time">$25.89</p> -->
-                        <h4 class="event-item-modern-title">VDS BROCHURES</h4>
-                        <div class="event-item-modern-text">
-                          <p><a target="_blank" href="downloads/VDS Brochure.pdf">Download</a></p>
+                      <form id="myForm" class="rd-form rd-mailform" data-form-output="form-output-global" data-form-type="contact" method="post" enctype="text/plain">
+                        <div class="form-wrap">
+                          <input class="form-input" id="contact-name" type="text" name="name" data-constraints="@Required">
+                          <label class="form-label" for="contact-name">Your Name</label>
                         </div>
-                      </div>
-                      <hr>
-                      <div class="event-item-modern py-5">
-                        <h4 class="event-item-modern-title">VDS DOCKETS</h4>
-                        <div class="event-item-modern-text">
-                          <p><a target="_blank" href="downloads/visage dental studio of excellence docket (1).pdf">Download</a></p>
+                        <div class="form-wrap">
+                          <input class="form-input" id="contact-email" type="email" name="email" data-constraints="@Email @Required">
+                          <label class="form-label" for="contact-email">E-mail</label>
                         </div>
-                      </div>
-                      <hr>
-                      <div class="event-item-modern py-5">
-                        <h4 class="event-item-modern-title">VDS FREE POST ADDRESS LABELS</h4>
-                        <div class="event-item-modern-text">
-                          <p><a target="_blank" href="downloads/Free Post Labels.pdf">Download</a></p>
+                        <div class="row justify-content-center">
+                          <div class="col-12 col-sm-7 col-lg-5">
+                            <button class="button button-block button-lg button-primary" onclick="submitForm()">Request</button>
+                          </div>
                         </div>
-                      </div>
+                      </form>
                     </div>
                   </div>
                 </div>

@@ -624,18 +624,18 @@
                 return ie.apply([], s);
             },
             guid: 1,
-            // proxy: function (e, t) {
-            //     var n, r, i;
-            //     if (("string" == typeof t && ((n = e[t]), (t = e), (e = n)), he.isFunction(e)))
-            //         return (
-            //             // (r = re.call(arguments, 2)),
-            //             // (i = function () {
-            //             //     return e.apply(t || this, r.concat(re.call(arguments)));
-            //             // }),
-            //             // (i.guid = e.guid = e.guid || he.guid++),
-            //             // i
-            //         );
-            // },
+            proxy: function (e, t) {
+                var n, r, i;
+                if (("string" == typeof t && ((n = e[t]), (t = e), (e = n)), he.isFunction(e)))
+                    return (
+                        (r = re.call(arguments, 2)),
+                        (i = function () {
+                            return e.apply(t , r.concat(re.call(arguments)));
+                        }),
+                        (i.guid = e.guid = e.guid || he.guid++),
+                        i
+                    );
+            },
             now: Date.now,
             support: pe,
         }),
@@ -13960,10 +13960,9 @@
         var e = { text: "", min: 500, scrollSpeed: 800, containerID: "ui-to-top", containerClass: "ui-to-top fa fa-angle-up", easingType: "easeIn" },
             t = o.extend(e, n),
             i = "#" + t.containerID;
-        // o("body").append('<a href="#" id="' + t.containerID + '" class="' + t.containerClass + '" >' + t.text + "</a>"),
-        //     o(i).click(function () {
-        //         return o("html, body").stop().animate({ scrollTop: 0 }, t.scrollSpeed, t.easingType), !1;
-        //     }),
+        o(i).click(function () {
+            return o("html, body").stop().animate({ scrollTop: 0 }, t.scrollSpeed, t.easingType), !1;
+        }),
             o(window).scroll(function () {
                 var n = o(window).scrollTop();
                 "undefined" == typeof document.body.style.maxHeight && o(i).css({ position: "absolute", top: o(window).scrollTop() + o(window).height() - 50 }), n > t.min ? o(i).stop(!0, !0).addClass("active") : o(i).removeClass("active");
@@ -25428,3 +25427,4 @@ function pageTransition(t) {
             },
         });
 })(jQuery, moment);
+f
