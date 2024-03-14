@@ -2392,6 +2392,10 @@ img {
 	height: 48px;
 }
 
+.icon-circle-md-cp{
+	padding: 10px;
+}
+
 .icon-sm {
 	font-size: 22px;
 	line-height: 28px;
@@ -8254,7 +8258,7 @@ html.rd-navbar-fixed-linked .page {
 	width: auto;
 	height: auto;
 	max-width: 200px;
-	max-height: 120px;
+	max-height: 140px;
 }
 
 .rd-navbar-classic.rd-navbar-static .rd-navbar-main-element {
@@ -8283,7 +8287,7 @@ html.rd-navbar-fixed-linked .page {
 }
 
 .rd-navbar-classic.rd-navbar-static.rd-navbar--is-stuck .rd-navbar-main, .rd-navbar-classic.rd-navbar-static.rd-navbar--is-clone .rd-navbar-main {
-	padding: 10px 0;
+	padding: 1px 0;
 }
 
 .rd-navbar-classic.rd-navbar-static.rd-navbar--is-stuck .rd-navbar-nav-item > .rd-navbar-submenu, .rd-navbar-classic.rd-navbar-static.rd-navbar--is-clone .rd-navbar-nav-item > .rd-navbar-submenu {
