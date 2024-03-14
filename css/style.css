@@ -13661,3 +13661,10 @@ html .dtp .invisible {
 .w-101{
 	width: 101%;
 }
+
+.text-grad{
+	
+          /** TEXT GRADIENT */ color: #A42E68; background-image: -webkit-linear-gradient(45deg, #A42E68 50%, #6F7074 50%); background-clip: text; -webkit-background-clip: text; text-fill-color: transparent; -webkit-text-fill-color: transparent;
+          
+        
+}
