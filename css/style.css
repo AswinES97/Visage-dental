@@ -10335,7 +10335,7 @@ html.rd-navbar-fixed-linked .page {
 	top: 50%;
 	transform: translateY(-50%);
 	font: 400 46px/50px 'FontAwesome';
-	color: #E7E7E7;
+	/* color: #E7E7E7; */
 }
 
 .owl-prev:hover,

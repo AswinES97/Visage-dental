@@ -42,6 +42,23 @@
       top: 60%;
       transform: translateY(-50%);
     }
+
+    @media (min-width: 992px) {
+      .rd-navbar-wrap-mobile {
+        display: none;
+      }
+    }
+
+    @media (max-width: 991px) {
+      .rd-navbar-wrap-mobile {
+        display: block;
+        position: absolute;
+        top: 10px;
+        /* Adjust top position as needed */
+        right: 10px;
+        /* Adjust right position as needed */
+      }
+    }
   </style>
 </head>
 
@@ -59,11 +76,8 @@
     </div>
   </div>
   <div class="chat-box">
-    <div class="chat-header text-white py-3 px-3 d-flex align-items-center justify-content-between"
-      style="background-color: #a42e68;">
-      <h5 class="ml-lg-3 ml-sm-2"><a class="text-white" target="_blank" href="https://wa.me/message/2ZGFVAIUIWW5P1">Chat
-          with Us<span
-            class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-whatsapp ml-lg-4 ml-ms"></span></a></h5>
+    <div class="chat-header text-white px-2 py-2 py-lg-3 px-lg-3 d-flex align-items-center justify-content-between" style="background-color: #a42e68;">
+      <h5 class="ml-3"><a class="text-white" target="_blank" href="https://wa.me/message/2ZGFVAIUIWW5P1">Chat with Us<span class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-whatsapp ml-2 ml-lg-4 ml-xs-3"></span></a></h5>
     </div>
   </div>
   <div class="page"><a class="section section-banner d-none d-xl-flex"
@@ -85,7 +99,12 @@
                 <!-- RD Navbar Toggle-->
                 <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
                 <!-- RD Navbar Brand-->
-                <div class="rd-navbar-brand"><a href="#"><img src="images/Logo png.PNG" alt=""></a></div>
+                <div class="rd-navbar-brand d-flex"><a href="#"><img src="images/Logo png.PNG" alt=""></a></div>
+                <!-- Instagram Logo for Mobile View -->
+                <div class="rd-navbar-wrap-mobile">
+                  <a class="rd-nav-item icon icon-circle icon-circle-md-cp icon-bg-white fa-instagram" target="_blank"
+                    href="https://www.instagram.com/visage_dentalstudio?"></a>
+                </div>
               </div>
               <div class="rd-navbar-main-element">
                 <div class="rd-navbar-nav-wrap">
@@ -107,12 +126,14 @@
                     </li>
                   </ul><a href="#"></a>
                 </div>
-              </div><a style="" class="rd-nav-item icon icon-circle icon-circle-md-cp icon-bg-white fa-instagram" target="_blank" href="https://www.instagram.com/visage_dentalstudio?"></a>
+              </div><a class="rd-nav-item icon icon-circle icon-circle-md-cp icon-bg-white fa-instagram" target="_blank"
+              href="https://www.instagram.com/visage_dentalstudio?"></a>
             </div>
           </div>
         </nav>
       </div>
     </header>
+
     <!-- Swiper-->
     <!-- <section class="  section-lg section-main-bunner section-main-bunner-filter text-center">
         <div class="main-bunner-img">
@@ -139,7 +160,7 @@
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <video  class="d-block w-101" autoplay muted playsinline loop>
+          <video class="d-block w-101" autoplay muted playsinline loop>
             <source src="images/Home.mp4">
           </video>
           <!-- <img class="d-block w-100" src="images/implant.jpg" alt="First slide"> -->
@@ -386,7 +407,8 @@
                   Have been sending jobs to visage for last few years with no complaints. Hussein carries out the job to
                   minute perfections and always receive the job on time.</p>
               </div>
-              <div class="testimonials-modern-name">- M.P <small>(28 June 2017)</small> <br> <span>⭐️⭐️⭐️⭐️⭐️</span></div>
+              <div class="testimonials-modern-name">- M.P <small>(28 June 2017)</small> <br> <span>⭐️⭐️⭐️⭐️⭐️</span>
+              </div>
             </div>
           </div>
           <div class="item">
@@ -407,16 +429,18 @@
                   adjustment.
                 </p>
               </div>
-              <div class="testimonials-modern-name">- PD  <br><span>⭐️⭐️⭐️⭐️⭐️</span></div>
+              <div class="testimonials-modern-name">- PD <br><span>⭐️⭐️⭐️⭐️⭐️</span></div>
             </div>
           </div>
           <div class="item">
             <div class="testimonials-modern">
               <div class="testimonials-modern-text">
-                <p>I have been using Visage for several years now. The quallity of work is excellent and Hussein is always ready to come to the practice to discuss cases. This has been very important especially for difficult cases, and all the dentists at the practice have been very happy with Visage.
+                <p>I have been using Visage for several years now. The quallity of work is excellent and Hussein is
+                  always ready to come to the practice to discuss cases. This has been very important especially for
+                  difficult cases, and all the dentists at the practice have been very happy with Visage.
                 </p>
               </div>
-              <div class="testimonials-modern-name">- Riaz Hassan  <br><span>⭐️⭐️⭐️⭐️⭐️</span></div>
+              <div class="testimonials-modern-name">- Riaz Hassan <br><span>⭐️⭐️⭐️⭐️⭐️</span></div>
             </div>
           </div>
         </div>
@@ -449,8 +473,15 @@
     <div class="container wow-outer">
       <div class="wow fadeIn">
         <div class="row row-60">
-          <div class="col-12"><a href="index.html"><img src="images/Logo png.PNG" alt="" width="140" height="57" srcset=""/></a><h4>Visage Dental Studio of Excellence</h4><p>
-          <br>13 Ladyhill, Luton, LU4 9LZ</p><p>Mon-Fri: 09:00-17:00<br>Sat-Sun: Closed</p><p>Mail: crowns@visagedentalstudio.com <br>Phone: 01582 517070</p></div>
+          <div class="col-12"><a href="index.html"><img src="images/Logo png.PNG" alt="" width="140" height="57"
+                srcset="" /></a>
+            <h4>Visage Dental Studio of Excellence</h4>
+            <p>
+              <br>13 Ladyhill, Luton, LU4 9LZ
+            </p>
+            <p>Mon-Fri: 09:00-17:00<br>Sat-Sun: Closed</p>
+            <p>Mail: crowns@visagedentalstudio.com <br>Phone: 01582 517070</p>
+          </div>
           <div class="col-12">
             <ul class="footer-minimal-nav" style="list-style: none;">
               <li><a href="services.html">Services</a></li>
@@ -462,14 +493,20 @@
           </div>
           <div class="col-12">
             <ul class="social-list" style="list-style: none;">
-              <li><a class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-facebook" target="_blank" href="https://www.facebook.com/visagedentalstudio"></a></li>
-              <li><a class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-instagram" target="_blank" href="https://www.instagram.com/visage_dentalstudio?"></a></li>
-              <li><a class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-whatsapp" target="_blank" href="https://wa.me/message/2ZGFVAIUIWW5P1"></a></li>
-              <li><a class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-phone" href="tel:+01582517070"></a></li>
+              <li><a class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-facebook" target="_blank"
+                  href="https://www.facebook.com/visagedentalstudio"></a></li>
+              <li><a class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-instagram" target="_blank"
+                  href="https://www.instagram.com/visage_dentalstudio?"></a></li>
+              <li><a class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-whatsapp" target="_blank"
+                  href="https://wa.me/message/2ZGFVAIUIWW5P1"></a></li>
+              <li><a class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-phone" href="tel:+01582517070"></a>
+              </li>
             </ul>
           </div>
         </div>
-        <p class="rights"><span>&copy;&nbsp; </span><span class="copyright-year"></span><span>&nbsp;</span><span>Visage Denatl Studio of Excellence</span><span>.&nbsp;</span><span>All Rights Reserved.</span><span>&nbsp;</span><a href="#">Privacy Policy</a></p>
+        <p class="rights"><span>&copy;&nbsp; </span><span class="copyright-year"></span><span>&nbsp;</span><span>Visage
+            Denatl Studio of Excellence</span><span>.&nbsp;</span><span>All Rights Reserved.</span><span>&nbsp;</span><a
+            href="#">Privacy Policy</a></p>
       </div>
     </div>
   </footer>
