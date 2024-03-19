@@ -6744,13 +6744,13 @@ html:not(.lt-ie10) .not-animated {
 
 @-webkit-keyframes cssload-spin {
     100% {
-        transform: rotate(360deg);
+        transform: rotate(380deg);
     }
 }
 
 @keyframes cssload-spin {
     100% {
-        transform: rotate(360deg);
+        transform: rotate(380deg);
     }
 }
 
@@ -13694,4 +13694,75 @@ html .dtp .invisible {
           /** TEXT GRADIENT */ color: #A42E68; background-image: -webkit-linear-gradient(45deg, #A42E68 50%, #6F7074 50%); background-clip: text; -webkit-background-clip: text; text-fill-color: transparent; -webkit-text-fill-color: transparent;
           
         
+}
+
+.carousel {
+	/* height: 100vh; */
+  }
+
+  .carousel-item {
+	height: 100%;
+  }
+
+  .carousel-caption {
+	top: 60%;
+	transform: translateY(-50%);
+  }
+
+  @media (min-width: 992px) {
+	.rd-navbar-wrap-mobile {
+	  display: none;
+	}
+  }
+
+  @media (max-width: 991px) {
+	.rd-navbar-wrap-mobile {
+	  display: block;
+	  position: absolute;
+	  top: 5px;
+	  /* Adjust top position as needed */
+	  right: 30px;
+	  /* Adjust right position as needed */
+	}
+  }
+  .chat-component {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 9999;
+}
+.chat-button {
+	border-radius: 50%;
+	position: relative;
+	padding: 34px 30px;
+	font-size: 15px;
+  }
+
+@media only screen and (max-width: 600px) {
+	.chat-component {
+		position: fixed;
+		bottom: 20px;
+		right: 20px;
+		z-index: 9999;
+	  }
+
+	  .chat-button {
+		border-radius: 50%;
+		position: relative;
+		padding: 24px 24px;
+		font-size: 10px;
+	  }
+  }
+
+
+.chat-box {
+  display: none;
+  position: absolute;
+  bottom: 70px;
+  right: 0;
+  width: 300px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }

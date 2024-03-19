@@ -10,24 +10,7 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
-    <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}
-    @media (min-width: 992px) {
-      .rd-navbar-wrap-mobile {
-        display: none;
-      }
-    }
-
-    @media (max-width: 991px) {
-      .rd-navbar-wrap-mobile {
-        display: block;
-        position: absolute;
-        top: 5px;
-        /* Adjust top position as needed */
-        right: 30px;
-        /* Adjust right position as needed */
-      }
-    }
-    </style>
+    <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
   </head>
   <body>
     <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
@@ -41,11 +24,10 @@
           </div>
       </div>
   </div>
-    <div class="chat-box">
-      <div class="chat-header text-white px-2 py-2 py-lg-3 px-lg-3 d-flex align-items-center justify-content-between" style="background-color: #a42e68;">
-        <h5 class="ml-3"><a class="text-white" target="_blank" href="https://wa.me/message/2ZGFVAIUIWW5P1">Chat with Us<span class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-whatsapp ml-2 ml-lg-4 ml-xs-3"></span></a></h5>
-      </div>
-    </div>
+  <div class="chat-component pe-2">
+    <button class="btn btn-primary btn-lg chat-button" id="chat-button"><a class="text-white" target="_blank"
+      href="https://wa.me/message/2ZGFVAIUIWW5P1">Let's <br> Chat!</a></button>
+  </div>
     <div class="page"><a class="section section-banner d-none d-xl-flex" href="https://www.templatemonster.com/website-templates/monstroid2.html" abrsndlt="" width="1600" height="310"></a>
       <!-- Page Header-->
       <header class="section page-header">
