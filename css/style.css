@@ -2365,6 +2365,11 @@ img {
 	color: #6f7074;
 }
 
+.icon-bg-pink {
+	background: #A42E68;
+	color: white;
+}
+
 .icon-blue {
 	color: #135DEC;
 }
@@ -2394,6 +2399,11 @@ img {
 
 .icon-circle-md-cp{
 	padding: 10px;
+}
+
+.icon-circle-md-cp-fb{
+	padding: 10px;
+	width: 33px;
 }
 
 .icon-sm {
