@@ -29,9 +29,36 @@
       display: block;
     }
   </style>
+  <script>
+    // Wait for the page to load
+document.addEventListener("DOMContentLoaded", function() {
+    // Show the modal
+    $('#exampleModal').modal('show');
+});
+
+  </script>
 </head>
 
 <body>
+<!--Bootstrap modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content border-0 bg-transparent">
+          <!-- Modal body with image -->
+          <div class="modal-body p-0 position-relative" style="max-height: calc(100vh - 120px); overflow-y: auto;">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="position: absolute; top: 10px; right: 10px; color: #fff;">
+                  <span aria-hidden="true">&times;</span>
+              </button>
+              <img src="images/new-product.png" class="img-fluid rounded" alt="Image">
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+
   <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img
         src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820"
         alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a>
@@ -48,8 +75,9 @@
 </div>
 
 <div class="chat-component pe-2">
-  <button class="btn btn-primary btn-lg chat-button" id="chat-button"><a class="text-white" target="_blank"
-    href="https://wa.me/message/2ZGFVAIUIWW5P1">Let's <br> Chat!</a></button>
+  <a class="text-white" target="_blank"
+    href="https://wa.me/message/2ZGFVAIUIWW5P1"><button class="btn btn-primary btn-lg chat-button" id="chat-button">Let's <br> Chat!</button>
+  </a>
 </div>
 
   <div class="page"><a class="section section-banner d-none d-xl-flex"
