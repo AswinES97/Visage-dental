@@ -30,30 +30,61 @@
     }
   </style>
   <script>
-    // Wait for the page to load
-document.addEventListener("DOMContentLoaded", function() {
-    // Show the modal
-    $('#exampleModal').modal('show');
-});
+    document.addEventListener("DOMContentLoaded", function () {
+      // Check if the modal has been displayed before
+      if (!getCookie('modalShown')) {
+        // Show the modal
+        $('#exampleModal').modal('show');
+        // Set a cookie to indicate that the modal has been shown
+        setCookie('modalShown', 'true', 365);
+      }
+    });
+
+    // Function to set a cookie
+    function setCookie(name, value, days) {
+      var expires = "";
+      if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        expires = "; expires=" + date.toUTCString();
+      }
+      document.cookie = name + "=" + (value || "") + expires + "; path=/";
+    }
+
+    // Function to get a cookie
+    function getCookie(name) {
+      var nameEQ = name + "=";
+      var ca = document.cookie.split(';');
+      for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+      }
+      return null;
+    }
 
   </script>
 </head>
 
 <body>
-<!--Bootstrap modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
+  <!--Bootstrap modal -->
+  <!--Bootstrap modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content border-0 bg-transparent">
-          <!-- Modal body with image -->
-          <div class="modal-body p-0 position-relative" style="max-height: calc(100vh - 120px); overflow-y: auto;">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="position: absolute; top: 10px; right: 10px; color: #fff;">
-                  <span aria-hidden="true">&times;</span>
-              </button>
-              <img src="images/new-product.png" class="img-fluid rounded" alt="Image">
-          </div>
+        <!-- Modal body with image -->
+        <div class="modal-body p-0 position-relative" style="max-height: calc(100vh - 120px); overflow-y: auto;">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"
+            style="position: absolute; top: 10px; right: 10px; color: #fff;">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <img src="images/new-product.png" class="img-fluid rounded" alt="Image">
+        </div>
       </div>
+    </div>
   </div>
-</div>
+
 
 
 
@@ -65,20 +96,20 @@ document.addEventListener("DOMContentLoaded", function() {
   </div>
   <div class="preloader">
     <div class="preloader-body">
-        <div class="cssload-container">
-            <div class="preloader-logo">
-                <img src="images/Logo png.PNG" alt="">
-            </div>
-            <div class="cssload-speeding-wheel"></div>
+      <div class="cssload-container">
+        <div class="preloader-logo">
+          <img src="images/Logo png.PNG" alt="">
         </div>
+        <div class="cssload-speeding-wheel"></div>
+      </div>
     </div>
-</div>
+  </div>
 
-<div class="chat-component pe-2">
-  <a class="text-white" target="_blank"
-    href="https://wa.me/message/2ZGFVAIUIWW5P1"><button class="btn btn-primary btn-lg chat-button" id="chat-button">Let's <br> Chat</button>
-  </a>
-</div>
+  <div class="chat-component pe-2">
+    <a class="text-white" target="_blank" href="https://wa.me/message/2ZGFVAIUIWW5P1"><button
+        class="btn btn-primary btn-lg chat-button" id="chat-button">Let's <br> Chat</button>
+    </a>
+  </div>
 
   <div class="page"><a class="section section-banner d-none d-xl-flex"
       href="https://www.templatemonster.com/website-templates/monstroid2.html" abrsndlt="" width="1600"
@@ -104,7 +135,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 <div class="rd-navbar-wrap-mobile">
                   <a class="rd-nav-item icon icon-circle icon-bg-sm-blank fa-instagram" target="_blank"
                     href="https://www.instagram.com/visage_dentalstudio?"></a>
-                    <a class="ml-2 rd-nav-item icon icon-circle icon-circle-md-cp-fb icon-bg-sm-blank fa-facebook" target="_blank" href="https://www.facebook.com/visagedentalstudio"></a>
+                  <a class="ml-2 rd-nav-item icon icon-circle icon-circle-md-cp-fb icon-bg-sm-blank fa-facebook"
+                    target="_blank" href="https://www.facebook.com/visagedentalstudio"></a>
                 </div>
               </div>
               <div class="rd-navbar-main-element">
@@ -130,11 +162,12 @@ document.addEventListener("DOMContentLoaded", function() {
               </div>
               <div class="d-flex justify-content-center mb-3">
                 <div>
-                  <a class="d-none d-lg-block rd-nav-item icon icon-circle icon-circle-md-cp icon-bg-pink fa-instagram" target="_blank"
-                  href="https://www.instagram.com/visage_dentalstudio?"></a>
+                  <a class="d-none d-lg-block rd-nav-item icon icon-circle icon-circle-md-cp icon-bg-pink fa-instagram"
+                    target="_blank" href="https://www.instagram.com/visage_dentalstudio?"></a>
                 </div>
                 <div>
-                  <a class="ml-3 d-none d-lg-block icon icon-circle icon-circle-md-cp-fb icon-bg-pink fa-facebook" target="_blank" href="https://www.facebook.com/visagedentalstudio"></a>
+                  <a class="ml-3 d-none d-lg-block icon icon-circle icon-circle-md-cp-fb icon-bg-pink fa-facebook"
+                    target="_blank" href="https://www.facebook.com/visagedentalstudio"></a>
                 </div>
               </div>
             </div>
@@ -174,10 +207,10 @@ document.addEventListener("DOMContentLoaded", function() {
           </video>
           <!-- <img class="d-block w-100" src="images/implant.jpg" alt="First slide"> -->
           <div class="carousel-caption">
-            <h2 class="text-grad"
+            <h2 class="text-grad text-h2-mob"
               style=" border-width: 20px; border-color:#000000;text-shadow: #000000; font-family:Verdana, Geneva, Tahoma, sans-serif">
               Visage Dental Studio of Excellence</h2>
-            <h5 class="text-white mt-4">Where Art Meets Technology</h5>
+            <h5 class="text-white mt-4 text-h4-mob">Where Art Meets Technology</h5>
           </div>
         </div>
         <div class="carousel-item">

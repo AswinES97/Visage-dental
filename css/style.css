@@ -13776,3 +13776,13 @@ html .dtp .invisible {
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+@media only screen and (max-width: 600px) {
+	.text-h2-mob{
+		margin-top: 45px;
+		font-size: 19px;
+	}
+	.text-h4-mob{
+		font-size: 10px;
+	}
+}
