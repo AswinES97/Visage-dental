@@ -13793,10 +13793,12 @@ html .dtp .invisible {
 	letter-spacing: 1px; 
 	word-spacing: 3px;
 }
+
 @media only screen and (max-width: 600px) {
 	.text-h2-mob{
+		line-height: 28px;
 		font-size: 10px;
-		margin-top: 45px;
+		margin-top: 40px;
 		font-family: "Squada One", sans-serif;
 		font-weight: 400;
 		font-style: normal;
@@ -13806,7 +13808,7 @@ html .dtp .invisible {
 	.text-h4-mob{
 		font-size: 10px;
 		color: #eadaf0;
-		letter-spacing: 1px; 
+		letter-spacing: 0px; 
 		word-spacing: 3px;
 	}
 }
