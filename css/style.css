@@ -13690,10 +13690,8 @@ html .dtp .invisible {
 }
 
 .text-grad{
-	
-          /** TEXT GRADIENT */ color: #A42E68; background-image: -webkit-linear-gradient(45deg, #A42E68 50%, #6F7074 50%); background-clip: text; -webkit-background-clip: text; text-fill-color: transparent; -webkit-text-fill-color: transparent;
-          
-        
+    color: #A42E68;
+	/* background-image: -webkit-linear-gradient(45deg, #A42E68 50%, #6F7074 50%); background-clip: text; -webkit-background-clip: text; text-fill-color: transparent; -webkit-text-fill-color: transparent; */
 }
 
 .carousel {
@@ -13777,12 +13775,39 @@ html .dtp .invisible {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.squada-one-regular {
+	font-family: "Squada One", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+  }
+
+.text-h2-mob{
+	font-size: 60px;
+	text-shadow: #000000;
+	letter-spacing: 1px; 
+	word-spacing: 3px;
+}
+.text-h4-mob{
+	color: #eadaf0;
+	font-size: 30px;
+	letter-spacing: 1px; 
+	word-spacing: 3px;
+}
 @media only screen and (max-width: 600px) {
 	.text-h2-mob{
+		font-size: 10px;
 		margin-top: 45px;
-		font-size: 19px;
+		font-family: "Squada One", sans-serif;
+		font-weight: 400;
+		font-style: normal;
+		font-size: 25px;
+		text-shadow: black;
 	}
 	.text-h4-mob{
 		font-size: 10px;
+		color: #eadaf0;
+		letter-spacing: 1px; 
+		word-spacing: 3px;
 	}
 }
+
