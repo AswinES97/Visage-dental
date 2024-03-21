@@ -13810,6 +13810,11 @@ html .dtp .invisible {
 		word-spacing: 0px;
 	}
 }
+
+.hero-video{
+	height: 1100px;
+}
+
 @media only screen and (max-width: 600px) {
 .breadcrumbs-custom-path {
     margin-left: -44px;
@@ -13829,4 +13834,26 @@ html .dtp .invisible {
 .h2-mob-lineh{
 	line-height: 22px;
 }
+
+.hero-video{
+	height: 280px;
+}
+}
+
+@media (min-width: 768px) { 
+	.text-h2-mob{
+		line-height: 20px;
+		font-size: 20px;
+		font-weight: 500;
+		margin-top: 40px;
+		font-style: normal;
+		text-shadow: black;
+		line-height: 30px;
+	}
+	.text-h4-mob{
+		font-size: 9px;
+		color: #eadaf0;
+		letter-spacing: 0px; 
+		word-spacing: 0px;
+	}
 }
