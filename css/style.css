@@ -13782,20 +13782,19 @@ html .dtp .invisible {
   } */
 
 .text-h2-mob{
-	font-weight: 900;
-	font-size: 60px;
+	font-size: 50px;
 	text-shadow: #000000;
 }
 .text-h4-mob{
 	color: #eadaf0;
-	font-size: 25px;
+	font-size: 20px;
 	letter-spacing: 1px; 
 	word-spacing: 3px;
 }
 
 @media only screen and (max-width: 600px) {
 	.text-h2-mob{
-		line-height: 20px;
+		line-height: 21px;
 		font-size: 25px;
 		font-weight: 500;
 		margin-top: 40px;
@@ -13840,10 +13839,10 @@ html .dtp .invisible {
 }
 }
 
-@media (min-width: 768px) { 
+@media only screen and (max-width: 768px) { 
 	.text-h2-mob{
 		line-height: 20px;
-		font-size: 20px;
+		font-size: 25px;
 		font-weight: 500;
 		margin-top: 40px;
 		font-style: normal;
@@ -13851,7 +13850,7 @@ html .dtp .invisible {
 		line-height: 30px;
 	}
 	.text-h4-mob{
-		font-size: 9px;
+		font-size: 13px;
 		color: #eadaf0;
 		letter-spacing: 0px; 
 		word-spacing: 0px;
